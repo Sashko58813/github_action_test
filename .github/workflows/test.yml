@@ -1,0 +1,14 @@
+name: CI
+
+on: push
+
+jobs:
+  run-shell-comand:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a strign
+        run: echo "Hello world"
+      - name: multiline script
+        run: |
+          node -v
+          npm -v
